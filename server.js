@@ -28,7 +28,7 @@ var articles = {
         date: 'August 8th, 2017',
         content: 
             `<p>
-                This this the content for the second article.
+                This is the content for the second article.
              </p>`
         },
         'article-three': {
@@ -37,7 +37,7 @@ var articles = {
             date: 'August 8th, 2017',
             content: 
                 `<p>
-                    This this the content for the third article.
+                    This is the content for the third article.
                 </p>`
         }
 };
