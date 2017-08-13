@@ -12,8 +12,8 @@ button.onclick = function() {
         if(requst.readyState === XMLHttpRequest.DONE) {
             //Take some acton
             if(request.status === 200) {
-                var counter = request.responseText();
-                var span = document.getElementById("count");
+                var counter = request.responseText;
+                var span = document.getElementById('count');
                 //Render the variable in the correct span
                 span.innerHTML = counter.toString();
             }
