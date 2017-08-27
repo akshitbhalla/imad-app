@@ -93,11 +93,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var pool = new Pool(config);
-
-app.get('test-db', function(req,res) {
-    
-});
 
 var counter=0;
 app.get('/counter', function(req,res) {
@@ -105,6 +100,7 @@ app.get('/counter', function(req,res) {
     res.send(counter.toString());
 });
 
+var pool = new Pool(config);
 app.get('/articles/:articleName', function(req,res) {
     // articleName == article-one
     // articles[articleName] == content{} for article-one
