@@ -14,42 +14,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-        'article-one': {
-        title: 'Article One | Akshit Bhalla',
-        heading: 'Article One',
-        date: 'August 8th, 2017',
-        content: `
-            <p>
-                This is the content for the first article. This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
-            </p>
-            <p>
-                This is the content for the first article. This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
-            </p>
-            <p>
-                This is the content for the first article. This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
-            </p>`
-        
-    },
-        'article-two': {
-        title: 'Article Two | Akshit Bhalla',
-        heading: 'Article Two',
-        date: 'August 8th, 2017',
-        content: 
-            `<p>
-                This is the content for the second article.
-             </p>`
-        },
-        'article-three': {
-            title: 'Article Three | Akshit Bhalla',
-            heading: 'Article Three',
-            date: 'August 8th, 2017',
-            content: 
-                `<p>
-                    This is the content for the third article.
-                </p>`
-        }
-};
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
